@@ -1,0 +1,13 @@
+{
+    "id": "de.manumaticx.photogrid",
+    "name": "de.manumaticx.photogrid",
+    "description" : "grid-layout to display photos",
+    "author": "Manuel Lehner",
+    "version": "0.1",
+    "copyright":"Copyright (c) Manuel Lehner 2014",
+    "license":"Apache License 2.0",
+    "min-alloy-version": "1.0",
+    "min-titanium-version":"2.1",
+    "tags":"image, grid, photo, layout, gallery",
+    "platforms":"android,ios"
+}

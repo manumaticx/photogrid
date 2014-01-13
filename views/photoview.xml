@@ -1,5 +1,5 @@
 <Alloy>
     <Window>
-        <ScrollView id="gridView" />
+        <ScrollableView id="photos" />
     </Window>
 </Alloy>

@@ -1,9 +1,9 @@
 var gridView;
 
-exports.createView = function(args){
-    gridView = Widget.createController('grid', args);
-    gridView.on('click', onClick);
-    return gridView.getView();
+exports.createWindow = function(args){
+    gridWindow = Widget.createController('grid', args);
+    gridWindow.on('click', onClick);
+    return gridWindow.getView();
 };
 
 exports.setData = function(args){

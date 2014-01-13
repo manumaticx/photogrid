@@ -1,0 +1,9 @@
+"Window":{
+    backgroundColor: '#000',
+    fullscreen: true,
+    navBarHidden: true
+},
+"#photos":{
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL
+}

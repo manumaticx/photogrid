@@ -1,4 +1,4 @@
-var gridView;
+var gridWindow;
 
 exports.createWindow = function(args){
     gridWindow = Widget.createController('grid', args);
@@ -7,7 +7,7 @@ exports.createWindow = function(args){
 };
 
 exports.setData = function(args){
-    gridView.setData(args);
+    gridWindow.setData(args);
 };
 
 function onClick(e){

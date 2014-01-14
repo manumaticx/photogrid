@@ -20,6 +20,12 @@ var gridWindow = photogrid.createWindow({
 
 gridWindow.open();
 ```
+__data__ (Array) is a list of __item__s (Object) with these properties:
+- image _(required)_
+- thumb _(optional)_
+- title _(optional)_
+ 
+See a demo [here](https://github.com/manumaticx/photogridDemo/)
 
 ## License
 

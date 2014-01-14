@@ -46,6 +46,7 @@ function setData(_data){
 function addItem(item, _index, _thumbSize){
     
     var index = _index || data.length,
+        thumbImage = item.thumb || item.image,
         thumbSize = _thumbSize || getThumbSize();
     
     if ('undefined' === typeof _index){
@@ -59,7 +60,7 @@ function addItem(item, _index, _thumbSize){
         height: thumbSize,
         top: options.space,
         left: options.space,
-        backgroundImage: item.thumb,
+        backgroundImage: thumbImage,
         _image: item.image,
         _index: index
     });

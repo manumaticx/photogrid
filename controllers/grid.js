@@ -27,8 +27,9 @@ if (_.has(args, 'data')){
  * set items to the grid
  * @param {Array} List of items (item is an {Object} containing image, thumb and title)
  */
-function setData(data){
+function setData(_data){
     
+    data = _data;
     clearGrid();
     
     var thumbSize = getThumbSize();

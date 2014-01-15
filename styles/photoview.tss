@@ -1,5 +1,11 @@
 "Window":{
     backgroundColor: '#000',
+    orientationModes: [
+        Ti.UI.LANDSCAPE_LEFT,
+        Ti.UI.LANDSCAPE_RIGHT,
+        Ti.UI.PORTRAIT,
+        Ti.UI.UPSIDE_PORTRAIT
+    ],
     fullscreen: true,
     navBarHidden: true
 },

@@ -2,7 +2,7 @@
 
 Alloy Widget for showing photos with thumbnail grid
 
-![demo](https://raw2.github.com/manumaticx/photogridDemo/master/screenshots/android_02_framed.png)
+![demo](https://raw2.github.com/manumaticx/demos/master/photogrid/screenshots/android_02_framed.png)
 
 ## Features
 * different columns in portrait and landscape
@@ -25,7 +25,7 @@ __data__ (Array) is a list of __item__s (Object) with these properties:
 - thumb _(optional)_
 - title _(optional)_
  
-See a demo [here](https://github.com/manumaticx/photogridDemo/)
+See a demo [here](https://github.com/manumaticx/demos/tree/master/photogrid)
 
 ## License
 

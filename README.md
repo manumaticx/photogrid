@@ -1,4 +1,4 @@
-# Photogrid
+# Photogrid [![Appcelerator Titanium](http://www-static.appcelerator.com/badges/alloy-git-badge-sq.png)](http://www.appcelerator.com/alloy/)
 
 Alloy Widget for showing photos with thumbnail grid
 

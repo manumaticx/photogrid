@@ -1,6 +1,8 @@
 # Photogrid [![Appcelerator Titanium](http://www-static.appcelerator.com/badges/alloy-git-badge-sq.png)](http://www.appcelerator.com/alloy/)
 
-Alloy Widget for showing photos with thumbnail grid
+A simple thumbnail grid view including a fullscreen detail view for displaying photos.
+
+This is a widget for Appcelerator [Alloy](http://www.appcelerator.com/platform/alloy/). If you are looking for a classic Titanium module, here is the CommonJS version of the widget: [photogridjs](https://github.com/manumaticx/photogridjs).
 
 ![](screen.png)
 

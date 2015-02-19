@@ -9,7 +9,9 @@ var args = arguments[0] || {},
         // space between thumbs
         space: 0,
         // wether title should show up on thumbs or not
-        showTitle: false
+        showTitle: false,
+        //scroll interval to automatically scroll through the photos
+        interval: 0
     },
 
     // grid data
@@ -35,8 +37,7 @@ function setData(_data){
     var thumbSize = getThumbSize();
     
     for (var i = 0; i < data.length; i++){
-        addItem(data[i], i, thumbSize);
-        
+        addItem(data[i], i, thumbSize);    
     }
 };
 
@@ -45,7 +46,7 @@ function setData(_data){
  */
 function addItem(item, _index, _thumbSize){
     
-    var index = _index || data.length,
+    var index = _index || 0,
         thumbImage = item.thumb || item.image,
         thumbSize = _thumbSize || getThumbSize();
     
@@ -141,11 +142,12 @@ function getThumbSize(){
  * @param {Object} e
  */
 function onItemSelected(e){
-    Ti.API.info('onItemSelected: ' + e.source);
+    Ti.API.info('onItemSelected: ' + JSON.stringify(e.source));
     
     var detailWindow = Widget.createController('photoview', {
         data: data,
-        index: e.source._index
+        index: e.source._index,
+        interval: options.interval
     });
     
     detailWindow.getView().open();

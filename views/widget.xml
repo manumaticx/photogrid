@@ -1,1 +1,3 @@
-<Alloy />
+<Alloy>
+  <ScrollView id="gridView" />
+</Alloy>

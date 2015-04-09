@@ -3,7 +3,7 @@
     "name": "de.manumaticx.photogrid",
     "description" : "grid-layout to display photos",
     "author": "Manuel Lehner",
-    "version": "0.1",
+    "version": "0.2",
     "copyright":"Copyright (c) Manuel Lehner 2014",
     "license":"Apache License 2.0",
     "min-alloy-version": "1.0",

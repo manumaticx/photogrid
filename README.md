@@ -20,15 +20,17 @@ Download the latest distribution ZIP-file and consult the [Titanium Documentatio
 
 ### Usage
 
-```javascript
-var photogrid = Alloy.createWidget("de.manumaticx.photogrid");
-
-var gridWindow = photogrid.createWindow({
-    data: data
-});
-
-gridWindow.open();
+__view__
+```xml
+<Widget id="photogrid" src="de.manumaticx.photogrid" />
 ```
+
+__controller__
+```js
+$.photogrid.init();
+$.photogrid.setData(data);
+```
+
 __data__ (Array) is a list of __item__s (Object) with these properties:
 - image _(required)_
 - thumb _(optional)_

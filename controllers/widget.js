@@ -91,6 +91,11 @@ function addItem(item, _index, _thumbSize){
     
     itemView.applyProperties(itemViewOpts);
     
+    // BUG: cannot apply not legacy properties with applyProperties, so do it now manually or index will be lost
+    // Ti.API.info('final Item: ' + JSON.stringify(itemView));
+    itemView._image = item.image;
+	itemView._index = index;
+
     if (options.showTitle){
         
         var titleView = Ti.UI.createView({

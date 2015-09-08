@@ -83,11 +83,13 @@ function addItem(item, _index, _thumbSize){
         _image: item.image,
         _index: index
     };
+    // iOS seems to not support remote background Images on Views, so change it to ImageView
+    // Tested in iOS and Android, working
     var itemView = (
         typeof thumbImage !== "string" && 
         _.has(thumbImage, 'apiName') && 
         thumbImage.apiName === "Ti.UI.View"
-    ) ? thumbImage : Ti.UI.createView({backgroundImage: thumbImage});
+    ) ? thumbImage : Ti.UI.createImageView({image: thumbImage});
     
     itemView.applyProperties(itemViewOpts);
     
